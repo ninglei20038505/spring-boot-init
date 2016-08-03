@@ -1,3 +1,3 @@
 # spring-boot-init
 
-spring-boot mybatis log4jdbc
+spring-boot mybatis druid log4jdbc
