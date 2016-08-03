@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jrj.tougu.fragment.dao.FragmentDao">
+
+	<sql id="BASE_PARAM">
+		id,type,column_name,content,operator,status,ctime,utime
+	</sql>
+	
+	<select id="getFragmentInfoById" resultType="com.jrj.tougu.fragment.po.Fragment" parameterType="string">
+		select <include refid="BASE_PARAM" /> from tg_manage_fragment where id=#{id}
+	</select>
+
+</mapper>
